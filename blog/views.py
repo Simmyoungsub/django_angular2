@@ -1,14 +1,11 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
-from django.views.generic.edit import CreateView
+from rest_framework import status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
-from .forms import CreateUserForm
-from django.core.urlresolvers import reverse_lazy
-# Create your views here.
+@api_view(['GET'])
+def list(request):
+    print(request)
 
-class CreateUserView(CreateView):
-    template_name='signup.html'
-    form_class=CreateUserForm
-
-class RegisteredView(TemplateView):
-    template_name = 'signup_done.html'
+    if(request.method == 'GET'):
+        return Response({"result":"test"})

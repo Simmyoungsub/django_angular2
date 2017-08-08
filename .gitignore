@@ -1,14 +1,14 @@
-ng/static/node_modules
-ng/static/browser_components
-ng/static/typings
-ng/static/dist
-ng/static/tmp
-ng/static/app/**/*.js
-ng/static/app/**/*.js.map
+front/node_modules
+front/browser_components
+front/typings
+front/dist
+front/tmp
+front/app/**/*.js
+front/app/**/*.js.map
 
 # e2e
-ng/static/e2e/*.js
-ng/static/e2e/*.map
+front/e2e/*.js
+front/e2e/*.map
 
 ### Django ###
 *.log
@@ -20,9 +20,9 @@ db.sqlite3
 media
 
 # misc
-ng/static/.sass-cache
-ng/static/connect.lock
-ng/static/coverage/*
-ng/static/libpeerconnection.log
+front/.sass-cache
+front/connect.lock
+front/coverage/*
+front/libpeerconnection.log
 npm-debug.log
 testem.log

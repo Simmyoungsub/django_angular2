@@ -19,7 +19,8 @@ from blog.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^accounts/signup$',CreateUserView.as_view(), name='signup'),
-    url(r'^accounts/login/done$',RegisteredView.as_view(), name='create_user_done'),
+    # url(r'^accounts/signup$',CreateUserView.as_view(), name='signup'),
+    # url(r'^accounts/login/done$',RegisteredView.as_view(), name='create_user_done'),
     url(r'^ng/',include('ng.urls', namespace='ng')),
+    url(r'^api/',include('blog.urls'))
 ]
